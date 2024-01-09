@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-image: url('https://i.pinimg.com/originals/d0/cb/6a/d0cb6aeabb07ebf5420eb6b45998bc21.png');
+            background-repeat: no-repeat;
+            background-size: 1500px 800px;
+        }
+       .container{
+         
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        text-align: left;
+       
+       }
+    .input{
+        margin-top: 0px;
+        margin-left: 10px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+    }
+    .text{
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+    button:hover{
+        box-shadow: 10px rgb(251, 211, 211);
+    }
+    </style>
+</head>
+<body >
+    <div class="container">
+    <div class="text">
+    
+    <p style="font-size:50px; color: white;">Guess Between 1 and 100</p>
+    </div>
+    <div class="input">
+    <input type="number" min="1" max="100" id="guessinput" style="width:200px; padding:8px; border-radius: 20px; ">
+    <button id="guessbtn" style="width:220px; padding:2px; margin-top: 20px; border-radius: 20px; color: rgb(38, 2, 2); font-size: 25px; ">Submit</button>
+    </div>
+    <p id="msg" style="color: whitesmoke; font-size: 40px; margin-top: 230px;"></p>
+    </div>
+</body>
+<script src="ran_number.js"></script>
+</html>
